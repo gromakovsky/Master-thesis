@@ -1,0 +1,91 @@
+\documentclass[russian, hyperref={unicode}]{beamer}
+
+\usetheme{Madrid}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{note page}{size=\footnotesize}
+\setbeamertemplate{note page} {%
+  \hbox{\insertshortframetitle[width=8cm]}%
+  \vskip1.75em
+  \nointerlineskip
+  \insertnote
+}
+
+% \setbeameroption{show only notes}
+
+\usepackage[T2A]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian, main=russian]{babel}
+\usepackage{graphicx}
+
+\usepackage{algpseudocode}
+\algtext*{EndWhile}     % Remove "end while" text
+\algtext*{EndFor}       % Remove "end for" text
+\algtext*{EndFunction}  % Remove "end function" text
+\algtext*{EndIf}        % Remove "end if" text
+
+\graphicspath{ {../Images/} }
+
+% workaround warning
+\let\Tiny=\tiny
+
+\title{Разработка алгоритмов статического поиска выходов за пределы
+  динамического массива в С/C++ программах}
+\author{И. Е. Громаковский \\
+  {\small Научный руководитель: М. А. Лукин}}
+\institute{Санкт-Петербургский национальный исследовательский
+  университет \\ информационных технологий, механики и оптики}
+\date{}
+
+\begin{document}
+
+\section{Введение}
+
+\frame{\titlepage}
+\note{Здравствуйте!}
+
+\subsection{Решаемая проблема}
+
+\begin{frame}{Описание задачи}
+    \begin{itemize}
+        \item Что-то.
+        \item Что-то ещё.
+    \end{itemize}
+\end{frame}
+\note {
+  Патак.
+}
+
+\section{Результаты}
+
+\begin{frame}{Результаты}
+    \begin{itemize}
+        \item Умею
+        \item Могу
+    \end{itemize}
+\end{frame}
+\note {
+  Типа вот вам результаты, всё круто, я хорош.
+}
+
+\begin{frame}{Спасибо за внимание!}
+    \begin{center}
+        \Huge
+        {\color{blue} Вопросы?}
+    \end{center}
+\end{frame}
+\note{До свидания!}
+
+\appendix
+
+\begin{frame}[noframenumbering, t]{Обоснование метрик}
+    \only<1> {
+      kek
+    }
+    \only<2> {
+      хи-хи
+    }
+\end{frame}
+
+\end{document}
