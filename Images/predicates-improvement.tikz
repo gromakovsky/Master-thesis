@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+[
+% scale=2,transform shape,
+% state/.style={rectangle,draw=black!50,fill=green!10,thick,minimum size=5mm},
+cfg_node/.style={rectangle, draw=black!50, thick, font=\small, align=center},
+% arr/.style={-,auto,>=stealth}
+]
+\small
+
+\node (n1) at (0, 0) [cfg_node] { arr = new int [7] };
+\node (n2) at (0, -1) [cfg_node] { x = $\phi(0, x_1)$ \\
+                                   if (x < 10) };
+\node (n3) at (-1, -2) [cfg_node] { if (x < 7) };
+\node (n4) at (2, -2) [cfg_node] { return 0 };
+\node (n5) at (-2, -3) [cfg_node] { arr[x] = 5; };
+\node (n6) at (1, -3) [cfg_node] { $x_1 = x + 1$ };
+
+\draw [->] node{}(n1) -- node{}(n2);
+\draw [->] node{}(n2) -- node{}(n3);
+\draw [->] node{}(n2) -- node{}(n4);
+\draw [->] node{}(n3) -- node{}(n5);
+\draw [->] node{}(n3) -- node{}(n6);
+\draw [->] node{}(n5) -- node{}(n6);
+\draw [->] node{}(n6) -- node{}(n2);
+
+\end{tikzpicture}
