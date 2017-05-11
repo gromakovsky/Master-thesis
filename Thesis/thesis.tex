@@ -16,6 +16,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usepackage{placeins}
+\usepackage{subfig}
 % \usepackage{filecontents}
 
 %% Конец
@@ -25,6 +26,8 @@
 
 %% …и папку с рисунками.
 \graphicspath{ {../Images/} }
+
+\newcommand{\inputTikZ}[1]{\input{../Images/#1.tikz}}
 
 \begin{document}
 
