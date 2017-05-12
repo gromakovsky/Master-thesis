@@ -16,7 +16,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usepackage{placeins}
-\usepackage{subfig}
+\usepackage{caption}
 % \usepackage{filecontents}
 
 %% Конец
@@ -61,5 +61,10 @@
 
 %% Обратите внимание на heading. Без него тоже работает, но название будет другим.
 \printmainbibliography
+
+%% После этой команды chapter будет генерировать приложения, нумерованные русскими буквами.
+\appendix
+
+\input{chapters/appendix.tex}
 
 \end{document}
