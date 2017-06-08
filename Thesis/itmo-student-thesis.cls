@@ -104,7 +104,7 @@
 \\\hline #4 \\\hline \endfirsthead
 \multicolumn{#5}{r}{\normalsizeПродолжение таблицы \thetable{}} \\\hline #4 \endhead
 }{\end{longtable}}
-                    
+
 %% Библиография по ГОСТу. Используем только бибер.
 
 \RequirePackage[
@@ -205,7 +205,7 @@
   \counterwithout{lstlisting}{section}
   \counterwithout{lstlisting}{subsection}
 }
-     
+
 
 %% "Тонкая" настройка теховских штрафов при формировании абзацев.
 
@@ -514,7 +514,7 @@
         {\setlength{\tabcolsep}{0.1em}
          \noindent\small\begin{tabu}to\textwidth{X[p]l}
             & Автор: \theauthor \hfilll \signatureplace \\
-            & Направление подготовки (специальность):\; 
+            & Направление подготовки (специальность):\;
                 \begin{minipage}[t]{0.4\textwidth}\thespecialty\end{minipage} \\
             & Квалификация: #1 \\
             & Руководитель: \thesupervisorshort, \thesupervisordegree \hfilll \signatureplace \\
@@ -556,7 +556,7 @@
         \bigskip
         \begingroup\banhyphens
         \noindent \textbf{Студент}~\theauthorshort\; \textbf{Группа}~\thestudygroup\; \textbf{Кафедра}~\thechair\; \textbf{Факультет}~\thefaculty\;
-        \textbf{Руководитель}~\thesupervisor, \thesupervisordegree, \thesupervisorwork\par
+        \textbf{Руководитель}~\thesupervisorshort, \thesupervisordegree, \thesupervisorwork\par
         \noindent \textbf{1 Наименование темы:} \thetitle\par
         \noindent \textbf{Направление подготовки (специальность):} \thespecialty\par
         \noindent \textbf{Направленность (профиль):} \thespecialization\par
@@ -574,7 +574,7 @@
         \begin{center}
             \textbf{7 Календарный план}
             \begin{tabu}to\textwidth{|l|X[3.5p]|X[p]|X[p]|}\hline
-            №№ пп. & Наименование этапов \worktypeGenitive & Срок выполнения этапов работы & Отметка о выполнении, 
+            №№ пп. & Наименование этапов \worktypeGenitive & Срок выполнения этапов работы & Отметка о выполнении,
             подпись руков.\strut \\\hline
             \thelistofstages
             \end{tabu}
@@ -617,7 +617,7 @@
             \theadvancedtechnologyusage\par
         \pagebreak[3]
         \noindent \textbf{8 Краткая характеристика полученных результатов:}
-            \theresearchsummary\par        
+            \theresearchsummary\par
         \pagebreak[3]
         \noindent \textbf{9 Гранты, полученные при выполнении работы:}
             \theresearchfunding\par
@@ -699,5 +699,4 @@
 	\def\rmdefault{ftm}
 \else
     \RequirePackage{paratype}
-\fi	
-
+\fi
